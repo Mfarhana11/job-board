@@ -50,9 +50,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Applied Jobs Data:", JSON.parse(localStorage.getItem("appliedJobs")) || []);
 });
-document.addEventListener("DOMContentLoaded", function () {
-    if (localStorage.getItem("isLoggedIn") !== "true") {
-        alert("You must log in first!");
-        window.location.href = "login.html"; // Redirect to login page
-    }
-});
+

@@ -71,39 +71,3 @@ function submitApplication(jobTitle, company, location) {
 
     closePopup();
 }
-
-const adminUsername = 'admin';
-const adminPassword = 'password123'; 
-
-// Admin login function
-function adminLogin() {
-    const username = document.getElementById('admin-username').value;
-    const password = document.getElementById('admin-password').value;
-
-    if (username === adminUsername && password === adminPassword) {
-        alert('Login successful!');
-        // Redirect to the Admin Dashboard page 
-        window.location.href = 'admin-dashboard.html';
-    } else {
-        alert('Invalid username or password');
-    }
-}
-
-// Check if the admin is logged in when loading the admin dashboard page
-window.onload = function() {
-    if (localStorage.getItem('isAdminLoggedIn') !== 'true') {
-        // Redirect to login page if not logged in
-        window.location.href = 'admin-login.html';
-    }
-};
-
-function logout() {
-    
-    localStorage.removeItem('isAdminLoggedIn');
-    alert('Logged out successfully!');
-    window.location.href = 'admin-login.html';
-}
-
-function viewApplications() {
-    alert('Viewing applications...');
-}
