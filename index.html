@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script src="logout.js"></script>
+
+    <header>
+        <h1>Job Board</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="application.html">My Applications</a>
+            <a href="login.html">Login</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Available Jobs</h2>
+        <!-- Added id="job-list" -->
+        <div id="job-list" class="job-listings">
+            <div class="job-card">
+                <h3>Frontend Developer</h3>
+                <p><strong>Company:</strong> Google</p>
+                <p><strong>Location:</strong> Remote</p>
+                <button class="apply-btn">Apply</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Backend Engineer</h3>
+                <p><strong>Company:</strong> Amazon</p>
+                <p><strong>Location:</strong> Bangalore</p>
+                <button class="apply-btn">Apply</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Full Stack Developer</h3>
+                <p><strong>Company:</strong> Microsoft</p>
+                <p><strong>Location:</strong> Hyderabad</p>
+                <button class="apply-btn">Apply</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
